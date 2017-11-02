@@ -9,6 +9,6 @@ e.g.)
 ```swift
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
-            central.scanForPeripherals(withServices: [GattUuid.Service.HeartRate], options: nil)
+            central.scanForPeripherals(withServices: [Gatt.Service.HeartRate.uuid], options: nil)
         }
 ```
